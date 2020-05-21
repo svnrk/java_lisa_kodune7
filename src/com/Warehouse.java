@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class Warehouse {
     static private List<String> shelves = new ArrayList<>();
     static private List<Product> prod = new ArrayList<>();
-    static private final String fileName = "PRODUCT_LIST.csv";
+    static private final String DEFAULT_FILE_NAME = "PRODUCT_LIST.csv";
 
     public void receive(Product prod, String loc){
         if (!shelves.contains(loc)) shelves.add(loc);
@@ -45,7 +45,7 @@ public class Warehouse {
     }
 
     public void createCSVFromProductList() {
-        createCSVFromProductList(fileName);
+        createCSVFromProductList(DEFAULT_FILE_NAME);
     }
 
     public void createCSVFromProductList(String fileName) {
