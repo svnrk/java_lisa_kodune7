@@ -43,7 +43,7 @@ public class Main {
         w.receive(pm, "B");
         w.receive(pp, "L");
 
-
+        w.createCSVFromProductList();
         System.out.println( ps1 + " on laos " + w.getItemCount(ps1) + " tk"); //2tk
         System.out.println( pk1 + " on laos " + w.getItemCount(pk1) + " tk"); //1tk
 
@@ -62,5 +62,6 @@ public class Main {
 // kontrolliks prindime välja laoseisu ja vaatame, kas antud kauba kogus on vähenenud
         System.out.println( ps1 + " on laos " + w.getItemCount(ps1) + " tk"); //1tk
 
+        w.createCSVFromProductList("PRODUCT_LIST_2.csv");
     }
 }

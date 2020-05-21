@@ -1,5 +1,7 @@
 package com;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class Product {
@@ -13,12 +15,30 @@ public class Product {
         this.shelfId = null;
     }
 
+    public Product(String name, Integer size, String shelfId) {
+        this.name = name;
+        this.size = size;
+        this.shelfId = shelfId;
+    }
+
     public void setShelfId(String shelfId) {
         this.shelfId = shelfId;
     }
 
     public String getShelfId() {
         return shelfId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSizeString() {
+        return Integer.toString(size);
+    }
+
+    public String[] getDataLine(){
+        return new String[]{getName(), getSizeString(), getShelfId()};
     }
 
     @Override
