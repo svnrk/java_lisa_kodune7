@@ -43,7 +43,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return name;
+        return name + " nr." + size;
     }
 
     @Override

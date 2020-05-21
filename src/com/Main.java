@@ -53,7 +53,7 @@ public class Main {
 // väljastame laost kauba:
         String shelfId = w.dispatch(po1);
         if (shelfId != null) {
-            System.out.println( "Väljastasin toote " + po1 + " asukohalt " + shelfId);
+            System.out.println( "Väljastasin toote: " + po1 + " asukohalt " + shelfId);
         }
         else {
             System.out.println( "Toodet, " + po1 + ", ei leitud laost");
